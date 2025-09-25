@@ -9,6 +9,21 @@ const meta = {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
     layout: 'centered',
   },
+  decorators: [
+    (Story) => (
+      <div
+        style={{
+          width: '640px',
+          maxWidth: '100%',
+          margin: '0 auto',
+          display: 'flex',
+          justifyContent: 'center',
+        }}
+      >
+        <Story />
+      </div>
+    ),
+  ],
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ['autodocs'],
 } satisfies Meta<typeof StoryButton>;
@@ -62,5 +77,12 @@ export const Small: Story = {
   args: {
     label: 'Button',
     size: 'sm',
+  },
+};
+
+export const FullWidth: Story = {
+  args: {
+    label: 'Button',
+    width: 'full',
   },
 };
