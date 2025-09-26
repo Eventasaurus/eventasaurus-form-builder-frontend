@@ -6,6 +6,7 @@ export interface ButtonProps {
   variant?: 'default' | 'outline' | 'destructive' | 'secondary' | 'ghost';
   size?: 'default' | 'sm' | 'lg';
   width?: 'full' | 'auto';
+  rounded?: 'none' | 'sm' | 'md' | 'lg' | 'xl' | 'full';
 }
 
 export const StoryButton = ({
@@ -13,13 +14,14 @@ export const StoryButton = ({
   variant = 'default',
   size = 'default',
   width = 'auto',
+  rounded = 'md',
   ...props
 }: ButtonProps) => {
   return (
     <Button
       variant={variant}
       size={size}
-      className={cn(width === 'full' && 'w-full')}
+      className={cn(width === 'full' && 'w-full', `rounded-${rounded}`)}
       {...props}
     >
       {label}

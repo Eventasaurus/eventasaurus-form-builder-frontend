@@ -86,3 +86,10 @@ export const FullWidth: Story = {
     width: 'full',
   },
 };
+
+export const PillShaped: Story = {
+  args: {
+    label: 'Button',
+    rounded: 'full',
+  },
+};

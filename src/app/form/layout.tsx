@@ -5,6 +5,7 @@ import {
 } from '@/components/ui/resizable';
 import React from 'react';
 import FormSidebar from '@/app/form/form-sidebar';
+import FormViewport from '@/app/form/form-viewport';
 
 function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -20,9 +21,7 @@ function Layout({ children }: { children: React.ReactNode }) {
       </ResizablePanel>
       <ResizableHandle withHandle />
       <ResizablePanel defaultSize={60}>
-        <div className='flex h-full items-center justify-center p-6'>
-          <span className='font-semibold'>Content</span>
-        </div>
+        <FormViewport />
       </ResizablePanel>
       <ResizableHandle withHandle />
       <ResizablePanel defaultSize={20}>Inspector Panel</ResizablePanel>

@@ -13,6 +13,7 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { ModeToggle } from '@/components/mode-toggle';
 import { SettingsIcon } from 'lucide-react';
+import FormSidebarComponentView from '@/app/form/form-sidebar-component-view';
 
 function FormSidebar() {
   return (
@@ -27,7 +28,9 @@ function FormSidebar() {
         </Button>
       </div>
       <Separator />
-      <div className={'flex-1 p-2'}>Main Content</div>
+      <div className={'flex-1'}>
+        <FormSidebarComponentView />
+      </div>
       <div className={'flex items-center justify-center gap-4 p-2'}>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
