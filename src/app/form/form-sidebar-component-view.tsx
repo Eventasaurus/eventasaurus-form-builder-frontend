@@ -26,7 +26,7 @@ import {
 
 function FormSidebarComponentView() {
   return (
-    <div className={'p-2'}>
+    <div className={'px-4 py-2'}>
       <div>
         <Accordion
           type='multiple'
@@ -34,7 +34,7 @@ function FormSidebarComponentView() {
         >
           <AccordionItem value='structure'>
             <AccordionTrigger>Structure</AccordionTrigger>
-            <AccordionContent className={'flex flex-wrap gap-2'}>
+            <AccordionContent className={'flex flex-wrap gap-4'}>
               <FormComponentButton
                 icon={<SquareArrowDownIcon className={'size-7'} />}
                 text={'V Flex'}
@@ -63,7 +63,7 @@ function FormSidebarComponentView() {
           </AccordionItem>
           <AccordionItem value='basic'>
             <AccordionTrigger>Basic</AccordionTrigger>
-            <AccordionContent className={'flex flex-wrap gap-2'}>
+            <AccordionContent className={'flex flex-wrap gap-4'}>
               <FormComponentButton
                 icon={<RectangleEllipsisIcon className={'size-7'} />}
                 text={'Button'}
@@ -80,7 +80,7 @@ function FormSidebarComponentView() {
           </AccordionItem>
           <AccordionItem value='typography'>
             <AccordionTrigger>Typography & Media</AccordionTrigger>
-            <AccordionContent className={'flex flex-wrap gap-2'}>
+            <AccordionContent className={'flex flex-wrap gap-4'}>
               <FormComponentButton
                 icon={<HeadingIcon className={'size-7'} />}
                 text={'Heading'}

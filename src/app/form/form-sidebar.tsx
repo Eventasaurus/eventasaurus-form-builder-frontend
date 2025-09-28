@@ -24,14 +24,14 @@ function FormSidebar() {
           variant={'outline'}
           asChild
         >
-          <Link href={'/dashboard'}>Dashboard</Link>
+          <Link href={'/'}>Dashboard</Link>
         </Button>
       </div>
       <Separator />
       <div className={'flex-1'}>
         <FormSidebarComponentView />
       </div>
-      <div className={'flex items-center justify-center gap-4 p-2'}>
+      <div className={'flex items-center justify-center gap-4 p-4'}>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button
